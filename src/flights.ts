@@ -61,6 +61,7 @@ export async function searchFlights(
   departDate: string = formattedDate,
   returnDate: string = formattedDate
 ) {
+  // console.error("SEARCHING FLIGHTS");
   const url = `api/v1/flights/searchFlights?fromId=${fromId}&toId=${toId}&pageNo=1&adults=1&children=0%2C17&sort=${sort}&cabinClass=${cabinClass}&currency_code=USD&departDate=${departDate}&returnDate=${returnDate}`;
   const response = await makeBookingComRequest<{
     data: {
@@ -70,9 +71,9 @@ export async function searchFlights(
       [key: string]: any; // allows any additional properties
     };
   }>(url);
-
+  // console.error("RESPONSE", response);
   const flightOffers = response?.data?.flightOffers ?? [];
-
+  // console.error("FLIGHT OFFERS", flightOffers);
   const flights = [];
   for (const flightOffer of flightOffers) {
     const flightDetails = getFlightDetails(flightOffer);
@@ -80,32 +81,5 @@ export async function searchFlights(
   }
   // I just need to get the actual airline details
 
-  console.log("FLIGHTS", flights);
-
   return flights;
 }
-
-/*
-
-const fetch = require('node-fetch');
-
-const url = 'https://booking-com15.p.rapidapi.com/api/v1/flights/searchFlights?fromId=BOM.AIRPORT&toId=DEL.AIRPORT&pageNo=1&adults=1&children=0%2C17&sort=BEST&cabinClass=ECONOMY&currency_code=AED';
-const options = {
-  method: 'GET',
-  headers: {
-    'x-rapidapi-key': 'ac20a37bd4mshbc1a76d7633b34bp1ce6aajsn21e888e1d1f7',
-    'x-rapidapi-host': 'booking-com15.p.rapidapi.com'
-  }
-};
-
-try {
-	const response = await fetch(url, options);
-	const result = await response.text();
-	console.log(result);
-} catch (error) {
-	console.error(error);
-}
-
-
-
-*/

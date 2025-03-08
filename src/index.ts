@@ -19,14 +19,15 @@ server.tool(
   async ({ from, to }) => {
     const fromLocationIds = await searchFlightLocations(from);
     const toLocationIds = await searchFlightLocations(to);
-
     const bestFromLocationId = fromLocationIds?.[0]?.id ?? "";
+    // console.error("BEST FROM LOCATION ID", bestFromLocationId);
     const bestToLocationId = toLocationIds?.[0]?.id ?? "";
-
+    // console.error("BEST TO LOCATION ID", bestToLocationId);
     const flights =
       (await searchFlights(bestFromLocationId, bestToLocationId)) ?? [];
     // print each flight with a new line
     const flightsTable = flights.join("\n");
+    // console.error("FLIGHTS TABLE", flightsTable);
     return {
       content: [
         {
@@ -37,3 +38,15 @@ server.tool(
     };
   }
 );
+
+async function main() {
+  const transport = new StdioServerTransport();
+  await server.connect(transport);
+
+  console.error("Weather MCP Server running on stdio");
+}
+
+main().catch((error) => {
+  console.error("Fatal error in main():", error);
+  process.exit(1);
+});
