@@ -1,0 +1,155 @@
+  {
+        "checkout": {
+          "until": "11:00",
+          "from": ""
+        },
+        "class_is_estimated": 0,
+        "has_free_parking": 1,
+        "is_free_cancellable": 1,
+        "is_genius_deal": 0,
+        "genius_discount_percentage": 0,
+        "badges": [
+          {
+            "text": "Limited-time Deal",
+            "badge_variant": "constructive",
+            "id": "Limited Time Deal"
+          }
+        ],
+        "city_in_trans": "in Mumbai",
+        "hotel_has_vb_boost": 0,
+        "review_score_word": "Excellent",
+        "review_nr": 3,
+        "unit_configuration_label": "Classic Triple Room\n<b>Hotel room</b>: 1 bed",
+        "type": "property_card",
+        "city": "Mumbai",
+        "hotel_include_breakfast": 0,
+        "default_language": "en",
+        "hotel_name_trans": "Collection O Palm Springs Beach Resort",
+        "is_no_prepayment_block": 1,
+        "extended": 0,
+        "preferred_plus": 0,
+        "checkin": {
+          "until": "",
+          "from": "12:00"
+        },
+        "review_score": 8.7,
+        "countrycode": "in",
+        "is_smart_deal": 0,
+        "updated_checkin": null,
+        "main_photo_id": 496036413,
+        "main_photo_url": "https://cf.bstatic.com/xdata/images/hotel/square60/496036413.jpg?k=8dd5dd757c7592892658b6563968defdc81a4da0dfb730095e00af43e2d78da0&o=",
+        "ufi": -2092174,
+        "children_not_allowed": null,
+        "id": "property_card_10711933",
+        "composite_price_breakdown": {
+          "gross_amount_per_night": {
+            "currency": "EUR",
+            "value": 38.6941722019
+          },
+          "included_taxes_and_charges_amount": {
+            "value": 0,
+            "currency": "EUR"
+          },
+          "excluded_amount": {
+            "value": 4.64330056044214,
+            "currency": "EUR"
+          },
+          "items": [
+            {
+              "inclusion_type": "excluded",
+              "kind": "charge",
+              "item_amount": {
+                "currency": "EUR",
+                "value": 4.64330056044214
+              },
+              "details": null,
+              "name": "Goods & services tax",
+              "base": {
+                "base_amount": 0,
+                "kind": "variable_amount"
+              }
+            },
+            {
+              "name": "Limited-time Deal",
+              "identifier": "limited-time-deal",
+              "base": {
+                "kind": "rate"
+              },
+              "kind": "discount",
+              "item_amount": {
+                "currency": "EUR",
+                "value": 53.4347497532
+              },
+              "details": "You're getting a discount because—for a limited time only—this property is offering reduced rates on rooms that match your search."
+            }
+          ],
+          "strikethrough_amount_per_night": {
+            "currency": "EUR",
+            "value": 92.1289219551
+          },
+          "gross_amount": {
+            "value": 38.6941722019,
+            "currency": "EUR"
+          },
+          "has_long_stays_weekly_rate_price": 0,
+          "charges_details": {
+            "mode": "extra_charges",
+            "amount": {
+              "currency": "EUR",
+              "value": 5
+            },
+            "translated_copy": "+€ 4.64 taxes and fees"
+          },
+          "benefits": [
+            {
+              "badge_variant": "constructive",
+              "identifier": "limited-time-deal",
+              "name": "Limited-time Deal",
+              "details": "You’re getting a reduced rate because this property has a limited-time deal running. These deals only last up to 48 hours.",
+              "icon": null,
+              "kind": "badge"
+            }
+          ],
+          "has_long_stays_monthly_rate_price": 0,
+          "discounted_amount": {
+            "value": 53.4347497532,
+            "currency": "EUR"
+          },
+          "all_inclusive_amount": {
+            "currency": "EUR",
+            "value": 43.3374727623421
+          },
+          "net_amount": {
+            "currency": "EUR",
+            "value": 38.6941722019
+          },
+          "strikethrough_amount": {
+            "value": 92.1289219551,
+            "currency": "EUR"
+          },
+          "gross_amount_hotel_currency": {
+            "currency": "INR",
+            "value": 3407.71
+          }
+        },
+        "preferred": 0,
+        "accommodation_type": 204,
+        "hotel_id": 10711933,
+        "min_total_price": 3407.71,
+        "cant_book": null,
+        "class": 3,
+        "soldout": 0,
+        "last_reservation_data": {
+          "last_reservation_ellapsed_months": 1
+        },
+        "timezone": "Asia/Kolkata",
+        "default_wishlist_name": "Mumbai",
+        "updated_checkout": null,
+        "distances": [],
+        "block_ids": ["1071193302_379635426_1_0_0"],
+        "is_geo_rate": "",
+        "longitude": 72.78339,
+        "latitude": 19.244493,
+        "hotel_name": "Collection O Palm Springs Beach Resort",
+        "currencycode": "INR"
+      },
