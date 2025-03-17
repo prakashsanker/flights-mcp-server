@@ -1,6 +1,6 @@
 {
   "name": "travel-mcp-server",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A Multi Context Protocol (MCP) server for travel services using Booking.com APIs",
   "main": "build/index.js",
   "type": "module",
