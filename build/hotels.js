@@ -45,7 +45,7 @@ export function getHotelDetails(hotel) {
     // Build the hotel details string
     return `
 📍 **${name}** (${reviewInfo})
-${hotel.city}}
+${hotel.city}
 💰 ${price} per night
 🕒 Check-in ${checkinTime}, Check-out ${checkoutTime}
 `;

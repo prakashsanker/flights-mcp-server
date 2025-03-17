@@ -1,0 +1,9 @@
+src/
+.git/
+.github/
+.vscode/
+node_modules/
+.gitignore
+tsconfig.json
+src/test.ts
+src/ExampleGetHotelsResponse.json

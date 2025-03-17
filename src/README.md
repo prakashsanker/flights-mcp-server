@@ -14,11 +14,11 @@ Searches for available flights between two airports via Booking.com's API.
 
 Provides the current date to the LLM, ensuring it has up-to-date temporal context.
 
-## 🔮 Features to Come
-
-### 🏨 `search-hotels`
+## 🏨 `search-hotels`
 
 Search for available hotels and accommodations.
+
+## 🔮 Features to Come
 
 ### 🚗 `search-car-rentals`
 
@@ -33,3 +33,7 @@ Access reviews for hotels and accommodations.
 Find taxi and transfer services at your destination.
 
 ## 📦 Installation
+
+### Use with Claude Desktop
+
+### Programmatic Use
