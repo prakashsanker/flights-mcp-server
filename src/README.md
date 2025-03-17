@@ -39,6 +39,11 @@ Find taxi and transfer services at your destination.
 
 This MCP server can be used with either Claude Desktop or your own client.
 
+### Pre-requisites
+
+1. Go to RapidAPI, and look for the booking.com API. Issue yourself a key
+2. Go to google cloud and issue yourself a Google Maps API key.
+
 ### Use with Claude Desktop
 
 In order to work with Claude Desktop, use the below `claude_desktop_config.json`
@@ -48,7 +53,10 @@ In order to work with Claude Desktop, use the below `claude_desktop_config.json`
   "mcpServers": {
     "travel": {
       "command": "npx",
-      "args": ["travel-mcp-server"]
+      "args": ["travel-mcp-server"],
+      "env": {
+        "BOOKING_COM_API_KEY": "<YOUR_BOOKING_DOT_COM_API_KEY>"
+      }
     },
     "google-maps": {
       "command": "docker",
